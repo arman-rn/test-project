@@ -48,9 +48,6 @@ module.exports = resolvers = {
           lastName,
         });
         const newUser = await user.save();
-        // pubsub.publish(NEW_USER, {
-        //   newUser: user,
-        // });
         return newUser;
       } catch (err) {
         throw err;
